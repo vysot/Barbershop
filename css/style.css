@@ -34,12 +34,6 @@ textarea {
     width: 520px;
     height: 120px;
 }
-.m-r-100{
-    margin-right: 100px;
-}
-.m-b-100{
-    margin-bottom: 100px;
-}
 
 .container {
     height: calc(100vh - 50px);
@@ -81,29 +75,27 @@ textarea {
     margin: 40px 0;
 }
 
-.gallery-img-one,
-.gallery-img-four {
+.gallery-img-big {
     display: flex;
+    width: 20%;
 }
 
-.gallery-img-two,
-.gallery-img-three {
+.gallery-img-small {
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
-.gallery-img-one img,
-.gallery-img-four img {
+.gallery-img-big img {
     width: 250px;
 }
 
-.gallery-img-two img,
-.gallery-img-three img {
+.gallery-img-small img {
     width: 250px;
     margin: 0 0 10px 0;
 }
 
-.gallery-img-one {
+.big-one {
     animation: slide-big-left 2s linear 1;
 }
 
@@ -117,7 +109,7 @@ textarea {
     }
 }
 
-.gallery-img-four {
+.big-four {
     animation: slide-big-right 2s linear 1;
 }
 
@@ -131,7 +123,7 @@ textarea {
     }
 }
 
-.gallery-img-two {
+.small-two {
     animation: slide-small-left 1s linear 1;
 }
 
@@ -145,7 +137,7 @@ textarea {
     }
 }
 
-.gallery-img-three {
+.small-three {
     animation: slide-small-right 1s linear 1;
 }
 
@@ -161,6 +153,7 @@ textarea {
 
 .services-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .services-container-circle,
@@ -171,17 +164,26 @@ textarea {
 .services-container-circle {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    width: 50%;
+    justify-content: space-between;
 }
-.services-container-circle-line{
+
+.services-container-circle-line {
     display: flex;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
 
 .services-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
 }
 
 .services-item-txt {
@@ -192,20 +194,19 @@ textarea {
 
 .services-container-circle img {
     width: 150px;
-    margin: 0 40px;
+
 }
 
 .services-container-img {
     display: flex;
-    justify-content: flex-end;
 }
 
 .services-container-img img {
-    height: 80vh;
+    width: 100%;
 }
 
 .one {
-    animation: circle-one 15s ease-in-out infinite;
+    animation: circle-one 15s linear infinite;
 }
 
 @keyframes circle-one {
@@ -216,20 +217,20 @@ textarea {
     }
 
     25% {
-        transform: translate(145%, 0);
+        transform: translate(210%, 0);
     }
 
     50% {
-        transform: translate(145%, 150%);
+        transform: translate(210%, 140%);
     }
 
     75% {
-        transform: translate(0, 150%);
+        transform: translate(0, 140%);
     }
 }
 
 .two {
-    animation: circle-two 15s ease-in-out infinite;
+    animation: circle-two 15s linear infinite;
 }
 
 @keyframes circle-two {
@@ -240,20 +241,20 @@ textarea {
     }
 
     25% {
-        transform: translate(0, 150%);
+        transform: translate(0, 140%);
     }
 
     50% {
-        transform: translate(-145%, 150%);
+        transform: translate(-195%, 140%);
     }
 
     75% {
-        transform: translate(-145%, 0);
+        transform: translate(-195%, 0);
     }
 }
 
 .three {
-    animation: circle-three 15s ease-in-out infinite;
+    animation: circle-three 15s linear infinite;
 }
 
 @keyframes circle-three {
@@ -264,20 +265,20 @@ textarea {
     }
 
     25% {
-        transform: translate(0, -150%);
+        transform: translate(0, -140%);
     }
 
     50% {
-        transform: translate(145%, -150%);
+        transform: translate(210%, -140%);
     }
 
     75% {
-        transform: translate(145%, 0%);
+        transform: translate(210%, 0);
     }
 }
 
 .four {
-    animation: circle-four 15s ease-in-out infinite;
+    animation: circle-four 15s linear infinite;
 }
 
 @keyframes circle-four {
@@ -288,15 +289,15 @@ textarea {
     }
 
     25% {
-        transform: translate(-145%, 0);
+        transform: translate(-180%, 0);
     }
 
     50% {
-        transform: translate(-145%, -150%);
+        transform: translate(-180%, -140%);
     }
 
     75% {
-        transform: translate(0, -150%);
+        transform: translate(0, -140%);
     }
 }
 
@@ -372,6 +373,7 @@ textarea {
 .contact-btn {
     background-color: #E5E5E5;
     height: 200px;
+    width: 100%;
 }
 
 .contact-btn-first {
@@ -380,7 +382,7 @@ textarea {
 }
 
 .contact-btn-first input {
-    width: 250px;
+    width: 100%;
     height: 30px;
 }
 
@@ -436,7 +438,8 @@ textarea {
 .footer-network img {
     width: 10px;
 }
-.start{
+
+.start {
     display: flex;
     flex-direction: column;
     justify-content: start;
