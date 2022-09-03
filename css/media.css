@@ -1,0 +1,168 @@
+@import url(./style.css);
+
+:root {
+    --circle-img-width: 150px;
+    --circle-expand: 1.5;
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        height: auto;
+    }
+
+    .gallery-container {
+        flex-wrap: wrap;
+    }
+
+    .gallery-img-small,
+    .gallery-img-big {
+        width: 50%;
+    }
+
+    .gallery-img-small {
+        align-items: center;
+    }
+
+    .gallery-img-big {
+        justify-content: center;
+    }
+
+    .small-two {
+        order: 1;
+    }
+
+    .small-three {
+        order: 2;
+    }
+
+    .big-one {
+        order: 3;
+    }
+
+    .big-four {
+        order: 4;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-container {
+        flex-wrap: wrap;
+    }
+
+    .gallery-img-small,
+    .gallery-img-big {
+        width: 100%;
+    }
+}
+
+.big-one {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .services-container {
+        flex-wrap: wrap;
+    }
+
+    .services-container-circle,
+    .services-container-img {
+        width: 100%;
+        height: calc(var(--circle-expand)*(var(--circle-img-width))*2.4);
+    }
+
+    .services-container-img,
+    .services-container-circle {
+        justify-content: center;
+    }
+
+    .services-container-img {
+        order: 1;
+    }
+
+    .services-container-circle {
+        order: 2;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .services-container-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .team-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-item {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .team-txt {
+        font-size: 4rem;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .team-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-item {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .team-item img {
+        width: 80%;
+    }
+
+    .team-item-name {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contact-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-map,
+    .contact-inf {
+        width: 90%;
+    }
+
+    .contact-map {
+        order: 1;
+    }
+
+    .contact-inf {
+        order: 2;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contact-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-map,
+    .contact-inf {
+        width: 90%;
+    }
+
+    .contact-map {
+        order: 2;
+    }
+
+    .contact-inf {
+        order: 1;
+    }
+}
